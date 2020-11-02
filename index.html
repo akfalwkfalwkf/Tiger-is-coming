@@ -1,0 +1,306 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>
+    <style type="text/css">
+      img{display: block; margin: auto;}
+
+      .back {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        display: flex;
+        position: absolute;
+        }
+        
+      .a {
+        position: absolute;
+        left: 15%;
+      }
+
+      .b {
+        position: absolute;
+        right: 15%;
+      }
+
+      .c {height: 100%;
+          width: 100%;
+          background-color: none;
+          left: 0px;
+          bottom: 0px;
+          display: flex;
+        position: absolute;}
+
+      .d {height: 100%;
+          width: 100%;
+          background-color: none;
+          left: 0px;
+          bottom: 0px;
+          display: flex;
+        position: absolute;}
+
+
+
+       .fog{height: 100%;
+          width: 100%;
+          background-color: none;
+          left: 0px;
+          bottom: 0px;
+          display: flex;
+        position: absolute;
+		animation-name: fog;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+    		
+      @keyframes fog
+
+      	{ 0% {opacity: 1;}
+          50%{opacity: 0.8;}
+          100%{opacity : 1;}}
+
+       .dis{height: 100%;
+        width: 100%;
+        background-color: none;
+        left: 0px;
+        bottom: 0px;
+        display: flex;
+        position: absolute;
+		animation-name: dis;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+    		
+      @keyframes dis
+
+      	{ 0% {opacity: 1;}
+          50%{opacity: 0.7;}
+          100%{opacity : 1;}}
+
+      .imgswap img:last-child{display:none} 
+
+      .imgswap:hover img:first-child{display:none}
+
+      .imgswap:hover img:last-child{display:inline-block} 
+
+      .beom {
+        left: -50%;
+        position:absolute;
+        animation-name: ani;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+      }
+
+
+       @keyframes ani{
+          0% {top: -900px;}
+          100% {top: -350px;}
+          0% {opacity: 1;}
+          90%{opacity: 1;}
+          100%{opacity : 0;}}
+
+
+          
+      .lig {
+        right: 15%;
+        top: 10px;
+        bottom: 0px;
+        position: absolute;
+        animation-name:lig;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes lig{
+        0% {opacity: 1;}
+        50%{opacity: 0;}
+        100% {opacity: 1;}
+      }
+
+      .liglig {
+        left: 15%;
+        top: 10px;
+        bottom: 0px;
+        position: absolute;
+        animation-name:liglig;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes liglig{
+        0% {opacity: 0;}
+        50%{opacity: 1;}
+        100% {opacity: 0;}
+      }
+
+      .dd {
+        position: absolute;
+        left: 15%;
+        animation-name: shake;
+        animation-duration: 0.82s;
+        animation-iteration-count: infinite;
+      }
+
+
+      .aniani { 
+        height: 100%;
+        width: 100%;
+        background-color: none;
+        left: 0px;
+        bottom: 0px;
+        display: flex;
+        position: absolute;
+        animation-name:aniani;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        }
+
+         @keyframes aniani{
+          0% {transform: scale(1);}
+          30% {transform: scale(0.99);}
+          70% {transform: scale(0.97);}
+          100% {transform: scale(1);}
+        }
+
+        @keyframes shake {
+          10%, 90% {transform: translate3d(-1px, 0, 0);}
+          20%, 80% {transform: translate3d(2px, 0, 0);}
+          30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+          40%, 60% {transform: translate3d(4px, 0, 0);}
+        }
+
+
+	    .back2 {
+       position: absolute; 
+       left: 40%;
+       bottom: 8%;
+      }
+
+       .back3 {
+       position: absolute; 
+       left: 40%;
+       bottom: 2%;
+      }
+
+      .rab1 {
+       position: absolute; 
+       left: 85%;
+       bottom: 2%;
+       animation-name: rab;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes rab{
+          0% {left: 87%;}
+          60% {left: 87%;}
+          85% {left: 84%;}
+          100% {left: 87%;}}
+
+	.rab2 {
+		       position: absolute; 
+		       left: -85%;
+		       bottom: 3%;
+		       animation-name: rabb;
+		        animation-duration: 4s;
+		        animation-iteration-count: infinite;
+		      }
+
+		      @keyframes rabb{
+		         0% {left: 6.5%;}
+          		10% {left: 6.5%;}
+         		 40% {left: 10%;}
+         		 55% {left: 6.5%;}
+          			100% {left: 6.5%;}
+
+          				.rab3{
+		       position: absolute; 
+		       left: -85%;
+		       bottom: 15%;
+		       animation-name: rabbi;
+		        animation-duration: 4s;
+		        animation-iteration-count: infinite;
+		      }
+
+		      @keyframes rabbi{
+		         0% {left: 6.5%;}
+          		10% {left: 6.5%;}
+         		 40% {left: 10%;}
+         		 55% {left: 6.5%;}
+          			100% {left: 6.5%;}
+
+
+
+         
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+
+
+
+  	<div class="back"><img src="./back.png" style="height: 100%;" >
+    </div>
+
+  	<div class="b"><img src="./r.png"></div>
+  	<div class="a"><img src="./w.png"></div>
+
+
+
+  	<div class="aniani">
+      <img src="./animal2.png"style="height: 100%; margin-bottom: 0px;"></div>
+
+
+  	<div class="rab1"><img src="./rabbit2.png" style="height: 80; "></div>
+  	<div class="rab2"><img src="./rabbit3.png" style="height: 80; "></div>
+<div class="rab3"><img src="./rabbit2.png" style="height: 80; "></div>
+ 
+    
+  	<div class="d">
+      <img src="./tree.png" style="height: 100%;margin-bottom: 0px;">
+    </div>
+  	<div class="fog">
+      <img src="./fog.png" style="height: 100%;margin-bottom: 0px;">
+    </div>
+      	<div class="d">
+      <img src="./fog.png" style="height: 100%;margin-bottom: 0px;">
+    </div>
+  	<div class="dis">
+      <img src="./dis.png" style="height: 100%;margin-bottom: 0px;">
+    </div>
+  	<div class=lig>
+      <img src="./redlig.png" style="height: 99%;" >
+    </div>
+  	<div class="liglig">
+      <img src="./bluelig.png"/ style="height: 99%;">
+    </div>
+<div class="d">
+      <img src="./nalchi.png" style="height: 100%;margin-bottom: 0px;">
+
+
+   <div class="back3"><audio src="./mp.mp3" type="audio/mp3" autoplay controls ></audio></div>
+
+  	<div class="back2">
+		<div class="dd" style="bottom: 2%;">
+      		<div class="imgswap">
+		        <img src="./zara.png"/>
+		        <img src="./zaraup.png" />
+		      </div>
+
+	       <div class="beom"> 
+	       	<div class="imgswap"><img src="./bum.png"> <img src="./bum2.png" /></div>
+    
+	   	 </div>     
+	  		</div>
+	     		
+ 
+    
+
+  </body>
+</html>
